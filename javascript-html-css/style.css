@@ -1,0 +1,19 @@
+body{
+    width: 97.6vw;
+    padding: 10px;
+    overflow-x: hidden;
+}
+
+.principal{
+    text-align: center;
+    padding: 10px;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+.font-style{
+    font-size:6rem ;
+    font-family: 'Dancing Script', cursive;
+}
+.font-style02{
+    font-size:2rem ;
+}
