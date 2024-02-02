@@ -18,3 +18,12 @@ body{
 .font-style02{
     font-size:2rem ;
 }
+.div-calculos{
+    background-color: lightgrey;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    }
