@@ -7,12 +7,13 @@ body{
 .principal{
     text-align: center;
     padding: 10px;
-    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
 }
 
 .font-style{
     font-size:6rem ;
     font-family: 'Dancing Script', cursive;
+    border-bottom: 2px solid lightgray;
+    padding-bottom: 20px;
 }
 .font-style02{
     font-size:2rem ;
