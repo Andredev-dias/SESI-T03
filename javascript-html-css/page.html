@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="principal">
@@ -16,6 +17,8 @@
         <p class="font-style02">Atividades com soma, subtração, divisão e multiplicação</p>
     </div>
     <div class="div-calculos">
+
+
         <div class="filhas">
             <h2>Soma</h2>
             <div class="wrapNumInput">
@@ -27,12 +30,16 @@
                 <input type="number" id="num2"/>
             </div>
             <div>
-                <button class="btn" onClick="">Calcular</button>
+                <button class="btn" onClick="soma()">Calcular</button>
             </div>
             <div>
                 <p>Resultado: <span id="resultado"></span></p>
             </div>
         </div>
+
+
+
+
         <div class="filhas">
             <h2>Subtração</h2>
             <div class="wrapNumInput">
@@ -86,5 +93,6 @@
           
         </div>
     </div>
+   
 </body>
 </html>
