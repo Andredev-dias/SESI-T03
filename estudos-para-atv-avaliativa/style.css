@@ -79,12 +79,12 @@ a:hover{
     width:600px;
     min-width: 300px;
     height: 500px;
-    background: red;
+    /* background: red; */
 }
 
 .rightContact{
     width: 600px;
     min-width: 300px;
     height:500px;
-    background: blue;
+    /* background: blue; */
 }
