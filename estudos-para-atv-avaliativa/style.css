@@ -20,6 +20,7 @@ body{
     width: 100%;
     height: 30px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    z-index: 999;
 }
 
 ul {
@@ -47,9 +48,15 @@ a:hover{
 
 .perfil01{
     width: 100%;
-    height: 400px;
-    background: yellow;
-    margin-top: 30px;
+    height: auto;
+    background: #ffffff;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content:center;
+    gap:50px;
+
 }
 .perfil02{
     width: 100%;
@@ -79,12 +86,40 @@ a:hover{
     width:600px;
     min-width: 300px;
     height: 500px;
-    /* background: red; */
 }
 
 .rightContact{
     width: 600px;
     min-width: 300px;
     height:500px;
-    /* background: blue; */
+}
+.rel{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.img01{
+    position: absolute;
+    transition: all 400ms linear;
+}
+.img01:hover{
+    cursor: crosshair;
+    transform: scale(1.5);
+    transition: all 400ms linear;
+
+}
+
+.leftDiv{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rightDiv{
+    width: 40%;
 }
