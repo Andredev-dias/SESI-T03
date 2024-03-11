@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
+</head>
+<body>
+    <h1>Tabela para Excel</h1>
+    <div>
+        <input type="text" id="nome" placeholder="Insira uma descricao">
+        <input type="number" id="valor" placeholder="Insira o valor do produto">
+        <input type="number" id="quantidade" placeholder="Insira a quantidade">
+    </div>
+    <br>
+    <div>
+        <button onclick="adicionarItem()">Adicionar a tabela</button>
+    </div>
+    <br>
+    <div>
+        <table id="tabela">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Valor</th>
+                    <th>Qtdade</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <div>
+        <button onclick="exportarParaExcel()">Exportar para Excel</button>
+    </div>
+</body>
+</html>
