@@ -23,3 +23,10 @@ function adicionarItem(){
     celulaValor.innerHTML = valor;
     celulaQuantidade.innerHTML = quantidade;
 }
+
+function exportarParaExcel(){
+    var tabela = document.getElementById("tabela");
+    var nomeArquivo = "tabela_produtos.xlsx";
+    var wb = XLSX.utils.table_to_book(tabela, {sheet: "Tabela de Produtos"});
+    XLSX.writeFile(wb, nomeArquivo)
+}

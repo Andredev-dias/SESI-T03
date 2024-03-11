@@ -4,9 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tabela Excel</title>
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
+<style>
+    #tabela{
+        background-color: black;
+        color: #ffff;
+    }
+    th{
+        width: 10vw;
+        padding: 3px;
+        text-align: left;
+    }
+    .tabelinha{
+        background-color: lightslategray;
+        color: #090909;
+    }
+</style>
 </head>
 <body>
     <h1>Tabela para Excel</h1>
@@ -29,7 +44,7 @@
                     <th>Qtdade</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="tabelinha">
 
             </tbody>
         </table>
