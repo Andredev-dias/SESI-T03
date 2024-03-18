@@ -9,7 +9,21 @@
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
 </head>
 <body>
-    
+    <div class="wrap-login">
+        <img class="logo-style" src="../Imagens/logo.jpg" alt="Logo" width="300px" height="auto">
+        <div class="form-div">
+            <h1>Credenciais</h1>
+            <input type="text" placeholder="Insira seu login" id="nome">
+            <div style="position: relative;">
+                <input type="password" placeholder="Insira sua senha" id="senha">
+                <div onclick="showPassword()" class="key">🔑</div>
+            </div>
+            <button onclick="login()">Entrar</button>
+        </div>
+        <div class="slogan-div">
+            <img src="../Imagens/slogan.webp" alt="Slogan" width="100%" height="auto">
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
