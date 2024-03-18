@@ -7,16 +7,23 @@
     <title>Login</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="wrap-login">
         <img class="logo-style" src="../Imagens/logo.jpg" alt="Logo" width="300px" height="auto">
         <div class="form-div">
             <h1>Credenciais</h1>
-            <input type="text" placeholder="Insira seu login" id="nome">
+            <div style="position: relative;">
+                <input type="text" placeholder="Insira seu login" id="nome">
+                <div class="key2">👳‍♂️</div>
+            </div>
             <div style="position: relative;">
                 <input type="password" placeholder="Insira sua senha" id="senha">
-                <div onclick="showPassword()" class="key">🔑</div>
+                <div class="key2">🔑</div>
+                <div onclick="showPassword()" class="key">👁</div>
             </div>
             <button onclick="login()">Entrar</button>
         </div>

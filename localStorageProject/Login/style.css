@@ -62,3 +62,50 @@ body{
 .slogn-style{
     border-radius: 20px;
 }
+
+input{
+    padding: 10px 30px;
+    background-color:  rgba(132, 82, 194, 0.644);
+    color: #ffff;
+    font-size: 1.6rem;
+    border: none;
+    margin-bottom: 2vh;
+    border-radius: 999px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+input::placeholder{
+    color: blueviolet;
+    font-size: 1.6rem;
+}
+
+input:focus{
+    box-shadow: rgba(113, 51, 157, 0.53) 0px 7px 29px 0px;
+}
+
+.key2{
+    position: absolute;
+    left: -30px;
+    top: 10px;
+}
+
+.key{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 5px;
+    top: 12px;
+    opacity: 0.7;
+}
+
+.key:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+
+h1{
+    font-family: "Agbalumo", system-ui;
+    font-weight: 600;
+    color: rgba(54, 17, 88, 0.912);
+    font-size: 3rem;
+}
