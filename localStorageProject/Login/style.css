@@ -10,8 +10,7 @@ body{
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
-    background: rgb(2,0,36);
-    background: linear-gradient(0deg, rgba(2,0,36,0.5914740896358543) 0%, rgba(9,96,121,0.4318102240896359) 47%, rgba(2,0,36,0.6502976190476191) 100%);
+    background: linear-gradient(0deg, rgba(2,0,36,0.9) 0%, rgba(9,96,121,0.4318102240896359) 47%, rgba(2,0,36,0.9) 100%);
 }
 
 .wrap-login{
@@ -20,9 +19,7 @@ body{
     justify-content: center;
     align-items: center;
     position: relative;
-    background-color: red;
     box-shadow: rgb(132, 82, 194) 0px 5px 200px;
-
     border-radius: 20px;
 }
 
@@ -33,15 +30,35 @@ body{
     transform: translate(-50%, -50%);
     border-radius: 30px;
     box-shadow: rgb(132, 82, 194) 0px 5px 200px;
+    z-index: +1;
 }
 
 .form-div{
     width: 500px;
-    background-color: yellow;
-
+    height: 500px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+    background-color: rgba(255, 255, 255, 0.826);
+    backdrop-filter: blur(5px);
+    border-bottom-right-radius:20px ;
+    border-top-right-radius: 20px;
 }
 
 .slogan-div{
     width: 500px;
-    background-color: green;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.826);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius:20px ;
+    border-top-left-radius: 20px;
+
+}
+
+.slogn-style{
+    border-radius: 20px;
 }
