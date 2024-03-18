@@ -67,7 +67,7 @@ input{
     padding: 10px 30px;
     background-color:  rgba(132, 82, 194, 0.644);
     color: #ffff;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     border: none;
     margin-bottom: 2vh;
     border-radius: 999px;
@@ -76,7 +76,7 @@ input{
 
 input::placeholder{
     color: blueviolet;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 }
 
 input:focus{
@@ -108,4 +108,20 @@ h1{
     font-weight: 600;
     color: rgba(54, 17, 88, 0.912);
     font-size: 3rem;
+}
+
+button{
+    background-color: rgba(54, 17, 88);
+    opacity: 0.7;
+    color: #ffff;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 999px;
+}
+
+button:hover{
+    opacity: 1;
+    cursor: pointer;
+    box-shadow: rgba(56, 50, 60, 0.682) 0px 7px 29px 0px;
+
 }
