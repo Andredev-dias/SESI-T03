@@ -1,6 +1,9 @@
+var cont = 0;
+
 const showPassword = () => {
     var inputSenha = document.querySelector("#senha");
-
+    // if(!((cont++)%2)) {inputSenha.setAttribute("type", "text")}
+    // else {inputSenha.setAttribute("type", "password");}
     if(inputSenha.getAttribute("type") === "password"){
         inputSenha.setAttribute("type", "text")
     }else{
