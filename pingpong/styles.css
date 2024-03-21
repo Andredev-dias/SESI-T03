@@ -1,0 +1,41 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.game-area {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    position: relative;
+}
+
+.snake {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 10px;
+}
+
+@keyframes blink {
+    0%{
+        background-color: red;
+
+    }
+    100%{
+        background-color: yellow;
+
+    }
+}
+
+.food {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(104, 165, 104);
+    position: absolute;
+    border-radius: 10px;
+    animation: blink 1s infinite;
+
+}
