@@ -26,8 +26,8 @@ body{
 
 .logo-style{
     position: absolute;
-    top: -70px;
-    left: 50%;
+    top: 0px;
+    right: 10%;
     transform: translate(-50%, -50%);
     border-radius: 30px;
     box-shadow: rgb(132, 82, 194) 0px 5px 200px;
@@ -141,5 +141,34 @@ button:hover{
     color: #ffff;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.682) 0px 7px 29px 0px;
+    }
 
+    @media (width <= 1024px){
+        .slogan-div{
+            display: none;
+        }
+
+        .wrap-login{
+            flex-direction:column;
+            position: block;
+        }
+
+        .logo-style{
+            position: block;
+            left: 50%;
+        }
+
+        .form-div{
+            width: 500px;
+            height: 500px;
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+            gap: 1vh;
+            background-color: rgba(255, 255, 255, 0.826);
+            backdrop-filter: blur(5px);
+            border-bottom-right-radius:20px ;
+            border-top-right-radius: 20px;
+        }
     }
