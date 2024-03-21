@@ -1,5 +1,5 @@
 const gameArea = document.getElementById('gameArea');
-let snake = [{x: 200, y: 200}];
+let snake = [{x: 100, y: 100}];
 let food = {x: 0, y: 0};
 let direction = 'top';
 let intervalId;

@@ -22,11 +22,11 @@ body, html {
 @keyframes blink {
     0%{
         background-color: red;
-
+        transform: scale(1.2);
     }
     100%{
         background-color: yellow;
-
+        transform: scale(0.9);
     }
 }
 
