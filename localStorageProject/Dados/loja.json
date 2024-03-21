@@ -2,31 +2,31 @@
     {
     "id": 1,
     "descricao": "Produto 1",
-    "imagem": "./Imagens/01.png",
+    "imagem": "../Imagens/01.jpg",
     "preco": 300.00
     },
     {
     "id": 2,
     "descricao": "Produto 2",
-    "imagem": "./Imagens/02.png",
+    "imagem": "../Imagens/02.jpg",
     "preco": 145.50
     },
     {
     "id": 3,
     "descricao": "Produto 3",
-    "imagem": "./Imagens/03.png",
+    "imagem": "../Imagens/03.jpg",
     "preco": 200.50
     },
     {
     "id": 4,
     "descricao": "Produto 4",
-    "imagem": "./Imagens/04.png",
+    "imagem": "../Imagens/04.jpg",
     "preco": 86.75
     },
     {
     "id": 5,
     "descricao": "Produto 5",
-    "imagem": "./Imagens/05.webp",
+    "imagem": "../Imagens/05.webp",
     "preco": 120.00
     }
 ]

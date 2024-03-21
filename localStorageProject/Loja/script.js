@@ -21,6 +21,8 @@ document.addEventListener("DOMContentLoaded", function () {
             card.className = "card"
             card.style.width = "18rem"
             card.style.marginRight = "10px"
+            card.style.marginBottom = "10px"
+
 
             const imagem = document.createElement("img");
             imagem.src = produto.imagem
@@ -38,8 +40,31 @@ document.addEventListener("DOMContentLoaded", function () {
             cardText.className = "card-text"
             cardText.textContent = produto.preco.toFixed(2)
 
+            const btnAdicionarAoCarrinho = document.createElement("a");
+            btnAdicionarAoCarrinho.href = "#"
+            btnAdicionarAoCarrinho.className = "btn btn-primary btn-adicionar-ao-carrinho"
+            btnAdicionarAoCarrinho.textContent = "Adicionar ao carrinho"
+            btnAdicionarAoCarrinho.setAttribute("data-indice", index)
+
+            cardBody.appendChild(cardTitle)
+            cardBody.appendChild(cardText)
+            cardBody.appendChild(btnAdicionarAoCarrinho)
+
+            card.appendChild(imagem)
+            card.appendChild(cardBody)
+
+            produtosContainer.appendChild(card)
         });
         
     }).catch((error) => console.error("Erro ao carregar o arquivo JSON", error))
+
+    $('#produtos-container').on("click", ".btn-adicionar-ao-carrinho", function (){
+        const indexDoProduto = $(this).data("indice");
+        const produtoSelecionado = produtos[indexDoProduto];
+        let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+        carrinho.push(produtoSelecionado)
+        localStorage.setItem("carrinho", JSON.stringify(carrinho));
+        alert("PRODUTO ADICIONADO COM SUCESSO")
+    })
 })
 
