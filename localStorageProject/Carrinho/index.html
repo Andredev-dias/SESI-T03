@@ -5,10 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrinho</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.0.1/mammoth.browser.min.js"></script>
+    <style>
+        #pedido{
+            /* display: none; */
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px;
+            background-color: rgba(50, 110, 50, 0.726);
+            color: #ffff;
+            font-size: 1rem;
+        }
+    </style>
 </head>
 <body>
-    <a href="../Loja">CONTINUAR COMPRANDO 🛍</a>
+    <a href="../Loja">🤑</a>
     <br></br>
     <h1>Carrinho</h1>
+
+    <div id="lista"></div>
+
+    <h3 id="total"></h3>
+
+    <button onclick="gerarDocumentoWord()">Realizar pedido</button>
+
+    <p id="pedido">
+        Pedido gerado com sucesso
+        <button id="sc" onclick="successClose()">✖</button>
+    </p>
+
+
+    <script src="script.js">
+    </script>
 </body>
 </html>
